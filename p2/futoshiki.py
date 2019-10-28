@@ -1,6 +1,7 @@
 from constraint import *
-
-valueTxt = open("futoshiki_input.txt", "r")
+import sys
+input_file = sys.argv[1]
+valueTxt = open(input_file, "r")
 valueList = []
 for i in valueTxt:
     valueList.append(i.strip().split(", "))
